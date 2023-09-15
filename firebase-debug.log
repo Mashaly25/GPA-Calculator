@@ -1,0 +1,129 @@
+[debug] [2023-09-14T18:55:22.190Z] ----------------------------------------------------------------------
+[debug] [2023-09-14T18:55:22.194Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-09-14T18:55:22.195Z] CLI Version:   12.5.4
+[debug] [2023-09-14T18:55:22.196Z] Platform:      win32
+[debug] [2023-09-14T18:55:22.196Z] Node Version:  v18.17.1
+[debug] [2023-09-14T18:55:22.484Z] Time:          Thu Sep 14 2023 21:55:22 GMT+0300 (Eastern European Summer Time)
+[debug] [2023-09-14T18:55:22.484Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-14T18:55:22.698Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-14T18:55:22.700Z] > authorizing via signed-in user (kareem.2512003@gmail.com)
+[debug] [2023-09-14T18:55:22.700Z] [iam] checking project pt9gpa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-14T18:55:22.703Z] > refreshing access token with scopes: []
+[debug] [2023-09-14T18:55:22.708Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-14T18:55:22.708Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-14T18:55:33.516Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------702737090235487892174969","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2023-09-14T18:55:33.518Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-09-14T18:55:33.518Z] > refreshing access token with scopes: []
+[debug] [2023-09-14T18:55:33.519Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-14T18:55:33.519Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-14T18:55:44.123Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------951257415169179087064305","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2023-09-14T18:55:44.123Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-09-14T18:55:45.265Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:144:12)
+    at refreshTokens (C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:508:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:149:22)
+    at async Client.addAuthHeader (C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:140:21)
+    at async Client.request (C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:34)
+    at async getFirebaseProject (C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async getDefaultHostingSite (C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:10:21)
+    at async requireHostingSite (C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:74:9)
+[error] 
+[error] Error: Failed to get Firebase project pt9gpa. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-09-14T18:55:56.164Z] ----------------------------------------------------------------------
+[debug] [2023-09-14T18:55:56.167Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-09-14T18:55:56.168Z] CLI Version:   12.5.4
+[debug] [2023-09-14T18:55:56.168Z] Platform:      win32
+[debug] [2023-09-14T18:55:56.169Z] Node Version:  v18.17.1
+[debug] [2023-09-14T18:55:56.170Z] Time:          Thu Sep 14 2023 21:55:56 GMT+0300 (Eastern European Summer Time)
+[debug] [2023-09-14T18:55:56.170Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-14T18:55:56.323Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-14T18:55:56.324Z] > authorizing via signed-in user (kareem.2512003@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\Programming\Web devoloping\Projects\PT9\PT9 GPA Calculator Deploy
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-14T18:56:12.816Z] Using project from CLI flag: pt9gpa
+[debug] [2023-09-14T18:56:12.818Z] > refreshing access token with scopes: []
+[debug] [2023-09-14T18:56:12.821Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-14T18:56:12.822Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-14T18:56:13.306Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-09-14T18:56:13.307Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-14T18:56:13.448Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pt9gpa [none]
+[debug] [2023-09-14T18:56:14.114Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pt9gpa 200
+[debug] [2023-09-14T18:56:14.115Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pt9gpa {"projectId":"pt9gpa","projectNumber":"788573389161","displayName":"PT9GPA","name":"projects/pt9gpa","resources":{"hostingSite":"pt9gpa"},"state":"ACTIVE","etag":"1_22c4091c-03ef-43ef-86af-3ac72657d444"}
+[info] i  Using project pt9gpa (PT9GPA) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote build/404.html 
+[debug] [2023-09-14T18:56:25.768Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-09-14T18:56:26.285Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-09-14T18:56:26.285Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.3.1","browserURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.tgz"},"live":{"version":"10.3","browserURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.3.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.3.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.3.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.3.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.3.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.memory.js"}}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] +  Firebase initialization complete! 
+[debug] [2023-09-14T18:56:36.358Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-09-14T18:57:58.672Z] ----------------------------------------------------------------------
+[debug] [2023-09-14T18:57:58.677Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-09-14T18:57:58.678Z] CLI Version:   12.5.4
+[debug] [2023-09-14T18:57:58.679Z] Platform:      win32
+[debug] [2023-09-14T18:57:58.679Z] Node Version:  v18.17.1
+[debug] [2023-09-14T18:57:58.681Z] Time:          Thu Sep 14 2023 21:57:58 GMT+0300 (Eastern European Summer Time)
+[debug] [2023-09-14T18:57:58.681Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-14T18:57:58.837Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-14T18:57:58.838Z] > authorizing via signed-in user (kareem.2512003@gmail.com)
+[debug] [2023-09-14T18:57:58.839Z] [iam] checking project pt9gpa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-14T18:57:58.843Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pt9gpa:testIamPermissions [none]
+[debug] [2023-09-14T18:57:58.843Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pt9gpa:testIamPermissions x-goog-quota-user=projects/pt9gpa
+[debug] [2023-09-14T18:57:58.843Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pt9gpa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-14T18:57:59.895Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pt9gpa:testIamPermissions 200
+[debug] [2023-09-14T18:57:59.896Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pt9gpa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-14T18:57:59.899Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pt9gpa [none]
+[debug] [2023-09-14T18:58:29.916Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/pt9gpa, {"headers":{},"method":"GET","signal":{}}): AbortError: The user aborted a request.
+[debug] [2023-09-14T18:58:29.918Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/pt9gpa (original: The user aborted a request.)
+[debug] [2023-09-14T18:58:30.309Z] FirebaseError: Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/pt9gpa
+    at RetryOperation._fn (C:\Users\karee\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:235:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project pt9gpa. Please make sure the project exists and your account has permission to access it.
