@@ -56,7 +56,8 @@ function Semester1(props) {
 
     let dgreeSum = (+course1 + +course2 + +course3 + +course4 + +course5 + +course6 + +course7 + +course8) / 8
 
-    BGPA = gpa
+    let bGPA = !GPA
+    console.log(GPA)
 
     return (
         <>
