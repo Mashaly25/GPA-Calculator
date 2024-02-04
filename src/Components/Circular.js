@@ -1,4 +1,4 @@
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import { CircularProgressbar} from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 function Circular(props) {
@@ -7,7 +7,7 @@ function Circular(props) {
     return (
         <CircularProgressbar
             value={percentage}
-            text={GPA.toFixed(2)}
+            text={GPA.toFixed(3)}
             styles={{
                 // Customize the root svg element
                 root: {},

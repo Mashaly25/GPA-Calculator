@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import Circular from "../Components/Circular";
+import Footer from "../Components/Footer";
 
 
 function Semester5(props) {
@@ -44,7 +45,6 @@ function Semester5(props) {
     let course10ByGrade = convDgreeToGrade(course10)
     console.log(course1ByGrade)
 
-    // هنا هضرب كل جريد فى عدد الساعات بتاعه على حسب الائحة واقسم ف الاخر على عدد ساعات الترم
 
     let RadiologyAndImaging = course1ByGrade * 2
     let Pathology2 = course2ByGrade * 2
@@ -59,7 +59,6 @@ function Semester5(props) {
 
     let GPA = (RadiologyAndImaging + Pathology2 + CardiovascularPulmonary + CardiovascularPulmonaryPT + Immunology + TherapeuticExercises2 + PrinciplesOfRehabilitation + Nutrition + QualityPrenciples + Ergonomics ) / 20
 
-    // هناخد الدرجات ونبعتها لل سركيولر بروجرس بس هنظهر فيه الجي بي ايه
 
     let dgreeSum = (+course1 + +course2 + +course3 + +course4 + +course5 + +course6 + +course7 + +course8 + +course9 + +course10) / 10
 
@@ -68,7 +67,7 @@ function Semester5(props) {
     return (
         <>
             <div className="container mx-auto flex flex-col md:flex-row mt-3 ">
-                <div id="course" className=" w-full md:w-2/3 flex flex-col space-y-3 py-3  rounded-lg border border-slate-400">
+                <div id="course" className=" w-full md:w-2/3 flex flex-col space-y-3 py-3  rounded-lg border border-green-400">
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2  ">
                         <div className="  text-slate-400">#</div>
                         <div className="  text-slate-400 ">Course Name</div>
@@ -88,12 +87,12 @@ function Semester5(props) {
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold text-green-950">3</div>
                         <div className=" text-sm font-bold text-green-950">Cardiovascular Pulmonary</div>
-                        <input onChange={(e) => { setCourse3(e.target.value) }} placeholder="83" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse3(e.target.value) }} placeholder="93" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
                     </div>
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold text-green-950">4</div>
                         <div className=" text-sm font-bold text-green-950">Cardiovascular Pulmonary PT</div>
-                        <input onChange={(e) => { setCourse4(e.target.value) }} placeholder="85" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse4(e.target.value) }} placeholder="92" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
                     </div>
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold text-green-950">5</div>
@@ -103,7 +102,7 @@ function Semester5(props) {
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold text-green-950">6</div>
                         <div className=" text-sm font-bold text-green-950">Therapeutic Exercises 2</div>
-                        <input onChange={(e) => { setCourse6(e.target.value) }} placeholder="79" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse6(e.target.value) }} placeholder="85" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
                     </div>
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold text-green-950">7</div>
@@ -113,7 +112,7 @@ function Semester5(props) {
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold  text-green-950">8</div>
                         <div className=" text-sm font-bold text-green-950">Nutrition</div>
-                        <input onChange={(e) => { setCourse8(e.target.value) }} placeholder="87" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse8(e.target.value) }} placeholder="77" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
                     </div>
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold  text-green-950">9</div>
@@ -123,20 +122,19 @@ function Semester5(props) {
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold  text-green-950">10</div>
                         <div className=" text-sm font-bold text-green-950">Ergonomics</div>
-                        <input onChange={(e) => { setCourse10(e.target.value) }} placeholder="89" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse10(e.target.value) }} placeholder="97" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
                     </div>
                 </div>
 
-                <div id="circ" className="bg-green-100 w-full md:w-1/3 py-3  flex flex-col items-center justify-center space-x-4 space-y-10">
+                <div id="circ" className="bg-gradient-to-t from-green-200 w-full md:w-1/3 py-3  flex flex-col items-center justify-center space-x-4 space-y-10">
                     <div className=" w-52 flex ">
                         <Circular finalDegree={dgreeSum} finalGPA={GPA} />
                     </div>
-                    <div className=" font-bold text-green-950 text-2xl">Your GPA: {GPA.toFixed(2)}</div>
+                    <div className=" font-bold text-green-950 text-2xl">Your GPA: {GPA.toFixed(3)}</div>
                 </div>
 
             </div>
-            <div className=" container mx-auto my-2 bg-green-100 w-full py-2 flex flex-row items-center justify-center">
-            </div>
+            <Footer/>
         </>
 
     )

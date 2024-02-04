@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import Circular from "../Components/Circular";
+import Footer from "../Components/Footer";
 
 
 function Semester1(props) {
@@ -40,7 +41,6 @@ function Semester1(props) {
     let course8ByGrade = convDgreeToGrade(course8)
     console.log(course1ByGrade)
 
-    // هنا هضرب كل جريد فى عدد الساعات بتاعه على حسب الائحة واقسم ف الاخر على عدد ساعات الترم
 
     let humanAnatomy1 = course1ByGrade * 3
     let physiology1 = course2ByGrade * 3
@@ -53,11 +53,10 @@ function Semester1(props) {
 
     let GPA = (humanAnatomy1 + physiology1 + histology1 + psychologyOfHandcaped + english + humanRightsAndCitizenship + biophysics + electiveCourse) / 21
 
-    // هناخد الدرجات ونبعتها لل سركيولر بروجرس بس هنظهر فيه الجي بي ايه
 
     let dgreeSum = (+course1 + +course2 + +course3 + +course4 + +course5 + +course6 + +course7 + +course8) / 8
 
-
+    BGPA = gpa
 
     return (
         <>
@@ -111,16 +110,15 @@ function Semester1(props) {
                     </div>
                 </div>
 
-                <div id="circ" className="bg-green-100 w-full md:w-1/3 py-3  flex flex-col items-center justify-center space-x-4 space-y-10">
+                <div id="circ" className="bg-gradient-to-t from-green-200 w-full md:w-1/3 py-3  flex flex-col items-center justify-center space-x-4 space-y-10">
                     <div className=" w-52 flex ">
                         <Circular finalDegree={dgreeSum} finalGPA={GPA} />
                     </div>
-                    <div className=" font-bold text-green-950 text-2xl">Your GPA: {GPA.toFixed(2)}</div>
+                    <div className=" font-bold text-green-950 text-2xl">Your GPA: {GPA.toFixed(2)} {}</div>
                 </div>
 
             </div>
-            <div className=" container mx-auto my-2 bg-green-100 w-full py-2 flex flex-row items-center justify-center">
-            </div>
+            <Footer/>
         </>
 
     )
