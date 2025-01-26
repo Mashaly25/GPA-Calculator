@@ -12,6 +12,7 @@ function SemesterBtn(props) {
             <Link to="/semester4" className="bg-green-900 shadow-lg px-2 py-1 text-white rounded-full  hover:px-3 hover:py-2 hover:text-green-200 transition-all ">Semester 4</Link>
             <Link to="/semester5" className="bg-green-900 shadow-lg px-2 py-1 text-white rounded-full  hover:px-3 hover:py-2 hover:text-green-200 transition-all ">Semester 5</Link>
             <Link to="/semester6" className="bg-green-900 shadow-lg px-2 py-1 text-white rounded-full  hover:px-3 hover:py-2 hover:text-green-200 transition-all ">Semester 6</Link>
+            <Link to="/semester7" className="bg-green-900 shadow-lg px-2 py-1 text-white rounded-full  hover:px-3 hover:py-2 hover:text-green-200 transition-all ">Semester 7</Link>
         </div>
             
         </>

@@ -16,7 +16,7 @@ function App() {
       <Navbar/>
       <SemesterBtn/>
       <Routes>
-        <Route path='/' element={<Semester6/>}/>
+        <Route path='/' element={<Semester7/>}/>
         <Route path='/semester1' element={<Semester1/>}/>
         <Route path='/semester2' element={<Semester2/>}/>
         <Route path='/semester3' element={<Semester3/>}/>

@@ -61,7 +61,7 @@ function Semester7(props) {
 
     let dgreeSum = (+course1 + +course2 + +course3 + +course4 + +course5 + +course6 + +course7 + +course8 + +course9 + +course10) / 10
 
-
+    
 
     return (
         <>
@@ -76,52 +76,52 @@ function Semester7(props) {
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold text-green-950">1</div>
                         <div className=" text-sm font-bold text-green-950">Traumatology</div>
-                        <input onChange={(e) => { setCourse1(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg "></input>
+                        <input onChange={(e) => { setCourse1(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg text-center border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400 "></input>
                     </div>
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold text-green-950">2</div>
                         <div className=" text-sm font-bold text-green-950">Orthopedics and its Surgery</div>
-                        <input onChange={(e) => { setCourse2(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse2(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg text-center border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400"></input>
                     </div>
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold text-green-950">3</div>
                         <div className=" text-sm font-bold text-green-950">Musculoskeletal Physical Therapy I</div>
-                        <input onChange={(e) => { setCourse3(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse3(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg text-center border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400"></input>
                     </div>
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold text-green-950">4</div>
                         <div className=" text-sm font-bold text-green-950">Orthotics and Prosthesis</div>
-                        <input onChange={(e) => { setCourse4(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse4(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg text-center border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400"></input>
                     </div>
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold text-green-950">5</div>
                         <div className=" text-sm font-bold text-green-950">Physical Therapy for Sports Injury</div>
-                        <input onChange={(e) => { setCourse5(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse5(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg text-center border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400"></input>
                     </div>
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold text-green-950">6</div>
                         <div className=" text-sm font-bold text-green-950">Biostatistics</div>
-                        <input onChange={(e) => { setCourse6(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse6(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg text-center border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400"></input>
                     </div>
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold text-green-950">7</div>
                         <div className=" text-sm font-bold text-green-950">Community Medicine</div>
-                        <input onChange={(e) => { setCourse7(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse7(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg text-center border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400"></input>
                     </div>
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold  text-green-950">8</div>
                         <div className=" text-sm font-bold text-green-950">Communcation Skills for Physical Therapy</div>
-                        <input onChange={(e) => { setCourse8(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse8(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg text-center border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400"></input>
                     </div>
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold  text-green-950">9</div>
                         <div className=" text-sm font-bold text-green-950">Rehabilitation Care Organization</div>
-                        <input onChange={(e) => { setCourse9(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse9(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg text-center border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400"></input>
                     </div>
                     <div className=" flex flex-row justify-between mx-1 py-2 px-2 bg-green-200 rounded-lg shadow-lg">
                         <div className=" text-sm font-bold  text-green-950">10</div>
                         <div className=" text-sm font-bold text-green-950">Clinical Reasoning</div>
-                        <input onChange={(e) => { setCourse10(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg"></input>
+                        <input onChange={(e) => { setCourse10(e.target.value) }} placeholder="99" type="number" min="0" max="100" className=" w-20 mr-8 md:mr-16 rounded-2xl text-center shadow-lg text-center border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400"></input>
                     </div>
                 </div>
 
